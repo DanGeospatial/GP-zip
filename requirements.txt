@@ -1,0 +1,3 @@
+PySide6>=6.6
+nvidia-nvcomp-cu12>=3.0.6
+numpy
