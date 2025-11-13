@@ -24,7 +24,7 @@ class MainWindow(QMainWindow):
         self.decompress_btn.setEnabled(False)
 
         self.algorithm = QComboBox()
-        self.algorithm.addItems(["LZ4", "Bitcomp", "Deflate", "Zstd"])
+        self.algorithm.addItems(["LZ4", "Bitcomp", "Deflate", "Zstd", "GDeflate", "Snappy", "Cascaded", "ANS"])
 
         # Layout
         layout = QVBoxLayout()
@@ -60,7 +60,7 @@ class MainWindow(QMainWindow):
             return
 
         algo = self.algorithm.currentText()
-        suffix = ".gpucomp" if mode == "compress" else ".out"
+        suffix = ".gpzip" if mode == "compress" else ".out"
         output_path = self.input_path + suffix
 
         self.progress.setValue(0)

@@ -19,7 +19,7 @@ class GPUCompressor(QThread):
 
     def run(self):
         try:
-            codec = nvcomp.Codec(algorithm=self.algorithm)
+            codec = nvcomp.Codec(algorithm=self.algorithm, device_id=0)
             file_size = os.path.getsize(self.input_path)
             processed = 0
 

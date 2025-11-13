@@ -1,5 +1,6 @@
 # GP-zip
-ZIP files but with your GPU!
+ZIP files but with your Nvidia GPU! 
+Originally designed for compressing research data for archiving. 
 
 # Requirements 
 - PySide6>=6.6
@@ -7,8 +8,7 @@ ZIP files but with your GPU!
 - numpy
 
 # To Add:
-- Metadata headers (so decompression automatically picks the correct codec)
-- Streaming progress (based on actual GPU kernel completion events)
-- Multi-threaded chunk compression
+- Decompression automatically picks the correct codec
+- Streaming progress (based on GPU kernel completion events)
+- Multithreaded chunk compression
 - Multi-GPU compression
-- Add more algorithms
