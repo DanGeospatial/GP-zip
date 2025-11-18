@@ -1,6 +1,8 @@
 # GP-zip
 ZIP files but with your Nvidia GPU! 
-Originally designed for compressing research data for archiving. 
+Originally designed for compressing research data for archiving.
+
+The goal is a shorter run time and lower power usage than CPU-based alternatives.
 
 # Requirements 
 - PySide6>=6.6
@@ -8,7 +10,7 @@ Originally designed for compressing research data for archiving.
 - numpy
 
 # To Add:
-- Decompression automatically picks the correct codec
-- Streaming progress (based on GPU kernel completion events)
 - Multithreaded chunk compression
 - Multi-GPU compression
+- Multi-file support
+- Select GPU and chunk size in GUI
